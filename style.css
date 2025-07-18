@@ -192,12 +192,52 @@ main{
     color: #707070;
 }
 
+
+/* homeless section style */
+#homeless-description-1{
+    margin: 20px 0;
+}
+#homeless-description-2{
+    margin-bottom: 30px;
+}
+.homeless-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.homeless-content{
+    max-width: 482px;
+}
+.homeless-content-image img{
+    width: 100%;
+}
+/* give section style */
+#give-description-1{
+    margin: 20px 0;
+}
+#give-description-2{
+    margin-bottom: 30px;
+}
+.give-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.give-content{
+    max-width: 482px;
+}
+.give-content-image img{
+    width: 100%;
+}
+
+
 /* small device media query */
 @media screen and (max-width: 576px) {
     .header{
         background-image: none;
     }
-    .banner-content
+    .banner-content,
+    .homeless-container
     {
         flex-direction: column-reverse;
     }
@@ -222,6 +262,13 @@ main{
      .donate-plan-card-01, .donate-plan-card-02, .donate-plan-card-03{
         text-align: center;
 
+     }
+     .homeless-container{
+        margin:130px 2% 2% 2%;
+     }
+     .give-container{
+        flex-direction: column;
+        margin:130px 2% 2% 2%;
      }
 
     
@@ -248,6 +295,12 @@ main{
         margin-left: 5%;
         align-items: center;
         justify-content: center;
+    }
+    .homeless-content{
+        margin-right: 2%;
+    }
+    .give-content{
+        margin-left: 2%;
     }
     
 }
