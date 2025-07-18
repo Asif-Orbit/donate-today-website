@@ -36,7 +36,9 @@
     font-size: 1.125rem;
     color: #707070;
 }
-
+.text-center{
+    text-align: center;
+}
 section{
     margin-top: 130px;
 }
@@ -155,6 +157,40 @@ main{
 }
 
 
+/* donate plan style */
+
+.donate-plan-card-content{
+    display: flex;
+    gap: 25px;
+    margin-top: 5%;
+}
+.donate-plan-card-01{
+    background-color: rgba(79, 157, 166, 0.1);
+    max-width: 367px;
+    padding: 50px 25px;
+    border-radius: 5px;
+}
+.donate-plan-card-02{
+    background-color: rgba(255, 89, 89, 0.1);
+    max-width: 367px;
+    padding: 50px 25px;
+    border-radius: 5px;
+}
+.donate-plan-card-03{
+    background-color: rgb(255, 244, 214);
+    max-width: 367px;
+    padding: 50px 25px;
+    border-radius: 5px;
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #121212;
+    margin: 30px 0 15px 0;
+}
+.card-title-description{
+    color: #707070;
+}
 
 /* small device media query */
 @media screen and (max-width: 576px) {
@@ -168,7 +204,8 @@ main{
     .donate-container{
         margin: 130px 2% 0 2%;
     }
-    .fix-amount{
+    .fix-amount
+    {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         margin: 1%;
@@ -176,6 +213,17 @@ main{
     .other-amount{
         margin-top: 50px;
     }
+    .donate-plan-card-content{
+        flex-direction: column;
+        margin: 2%;
+        justify-items: center;
+        align-items: center;
+    }
+     .donate-plan-card-01, .donate-plan-card-02, .donate-plan-card-03{
+        text-align: center;
+
+     }
+
     
 
     
@@ -193,6 +241,13 @@ main{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         margin: 1%;
+    }
+    .donate-plan-card-content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 5%;
+        align-items: center;
+        justify-content: center;
     }
     
 }
