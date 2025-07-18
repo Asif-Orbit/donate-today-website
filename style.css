@@ -27,12 +27,24 @@
     border-radius: 8px;
     border: none;
 }
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #121212;
+}
+.section-title-description{
+    font-size: 1.125rem;
+    color: #707070;
+}
 
 section{
     margin-top: 130px;
 }
 
-
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
 /* header style */
 .header{
@@ -83,7 +95,64 @@ section{
     width: 100%;
 }
 
+/* donate today section style */
+#donate-description{
+    margin: 2% 0 4% 0;
 
+}
+.donate-container{
+    
+    
+    display: flex;
+    justify-content: center;
+    
+    
+    text-align: center;
+}
+.donate{
+    max-width: 765px;
+}
+
+.fix-amount{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+
+}
+.amount{
+    padding: 45px 30px;
+    color: #707070;
+    font-weight: 600;
+    font-size: 1.875rem;
+    background-color: #FAFAFA;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.amount:hover{
+    color: #FF5959;
+    border: 2px solid #FF5959;
+    background-color: #FFEEEE;
+}
+
+.other-amount input{
+    text-align: center;
+    width: 100%;
+    border: none;
+    color: #B3B3B3;
+    padding: 10px;
+    margin-top:5%;
+    
+}
+.other-amount input:focus{
+    outline: none;
+    color: #121212;
+}
+
+.other-amount hr{
+    border: 1px solid #DADADA;
+    margin-bottom: 30px;
+}
 
 
 
@@ -96,6 +165,17 @@ section{
     {
         flex-direction: column-reverse;
     }
+    .donate-container{
+        margin: 130px 2% 0 2%;
+    }
+    .fix-amount{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 1%;
+    }
+    .other-amount{
+        margin-top: 50px;
+    }
     
 
     
@@ -107,6 +187,11 @@ section{
     }
     .banner-content{
         padding: 1%;
+        margin: 1%;
+    }
+    .fix-amount{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
         margin: 1%;
     }
     
